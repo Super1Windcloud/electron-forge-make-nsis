@@ -1,4 +1,4 @@
-# @superwindcloud/maker-nsis
+# electron-forge-make-nsis
 
 An `electron-forge` maker for NSIS that supports `electron-forge` v6 and can be used as a replacement for `electron-builder`. Supports code-signing and basic updates with `electron-updater`. This is a community-maintained fork with additional features and improvements.
 
@@ -15,7 +15,7 @@ An `electron-forge` maker for NSIS that supports `electron-forge` v6 and can be 
 ## Installation
 
 ```bash
-npm install --save-dev @superwindcloud/maker-nsis
+npm install --save-dev electron-forge-make-nsis
 ```
 
 ## Configuration
@@ -29,7 +29,7 @@ To use this maker, add it to your `electron-forge` configuration in `package.jso
       "packagerConfig": {},
       "makers": [
         {
-          "name": "@superwindcloud/maker-nsis",
+          "name": "electron-forge-make-nsis",
           "config": {
             // Optional: Code signing configuration
             "codesign": {
@@ -72,7 +72,7 @@ For a more comprehensive configuration that includes multiple architectures and 
       "packagerConfig": {},
       "makers": [
         {
-          "name": "@superwindcloud/maker-nsis",
+          "name": "electron-forge-make-nsis",
           "platforms": ["win32"],
           "config": {
             "artifactName": "${productName}-Setup-${version}-${arch}.${ext}",
