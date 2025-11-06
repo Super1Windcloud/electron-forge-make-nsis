@@ -1,6 +1,6 @@
-# @electron-forge/maker-nsis
+# @superwindcloud/maker-nsis
 
-An `electron-forge` maker for NSIS that supports `electron-forge` v6 and can be used as a replacement for `electron-builder`. Supports code-signing and basic updates with `electron-updater`.
+An `electron-forge` maker for NSIS that supports `electron-forge` v6 and can be used as a replacement for `electron-builder`. Supports code-signing and basic updates with `electron-updater`. This is a community-maintained fork with additional features and improvements.
 
 ## Features
 
@@ -9,11 +9,13 @@ An `electron-forge` maker for NSIS that supports `electron-forge` v6 and can be 
 - Compatible with `electron-forge` v6
 - Supports basic updates with `electron-updater`
 - Cross-architecture support (x64, ia32, arm64)
+- Enhanced configuration options
+- Active community support
 
 ## Installation
 
 ```bash
-npm install --save-dev @electron-forge/maker-nsis
+npm install --save-dev @superwindcloud/maker-nsis
 ```
 
 ## Configuration
@@ -27,7 +29,7 @@ To use this maker, add it to your `electron-forge` configuration in `package.jso
       "packagerConfig": {},
       "makers": [
         {
-          "name": "@electron-forge/maker-nsis",
+          "name": "@superwindcloud/maker-nsis",
           "config": {
             // Optional: Code signing configuration
             "codesign": {
@@ -121,6 +123,10 @@ To lint the source code:
 npm run lint
 ```
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
 ## Requirements
 
 - Node.js >= 20.0.0
@@ -129,3 +135,7 @@ npm run lint
 ## License
 
 MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## Acknowledgements
+
+This package is a community-maintained fork of the original electron-forge maker-nsis functionality with additional features and improvements.
