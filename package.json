@@ -1,0 +1,50 @@
+{
+	"name": "electron-forge-make-nsis",
+	"version": "1.0.0",
+	"description": "An `electron-forge` maker for NSIS that supports `electron-forge` v6 and can be used as a replacement for `electron-builder`. Supports code-signing and basic updates with `electron-updater`.",
+	"main": "dist/cjs/makerNsis.js",
+	"module": "dist/esm/makerNsis.js",
+	"files": [
+		"dist",
+		"package-lock.json",
+		"package.json",
+		"README.md",
+		"LICENSE"
+	],
+	"author": {
+		"name": "Super1WindCloud",
+		"email": "ss1178933440@gmail.com"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/Super1WindCloud",
+	"dependencies": {
+		"@electron-forge/maker-base": "^7.10.2",
+		"@electron/windows-sign": "^2.0.2",
+		"app-builder-lib": "^26.0.12",
+		"debug": "^4.4.3",
+		"electron-updater-yaml": "^1.1.2",
+		"fs-extra": "^11.3.2"
+	},
+	"devDependencies": {
+		"@types/debug": "^4.1.12",
+		"@types/fs-extra": "^11.0.4",
+		"@types/node": "^24.10.0",
+		"@typescript-eslint/eslint-plugin": "^8.46.3",
+		"@typescript-eslint/parser": "^8.46.3",
+		"eslint": "^9.39.1",
+		"eslint-config-eslint": "^13.0.0",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^7.2.1",
+		"typescript": "^5.9.3"
+	},
+	"scripts": {
+		"taze": "npx taze major -w",
+		"build": "tsc && tsc -p tsconfig.esm.json",
+		"lint": "eslint --ext .ts,.js src",
+		"prepublishOnly": "npm run  build"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	}
+}
